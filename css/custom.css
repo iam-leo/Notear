@@ -1,0 +1,65 @@
+@font-face {
+    font-family: "Azonix";
+    font-display: swap;
+    src: url("../font/Azonix.woff");
+  }
+
+h1{
+    font-family: 'Azonix', sans-serif;
+}
+#ar{
+    color: #5bc4da;
+    background-color: rgba(245, 245, 245, 0.25 );
+    border-radius: 5px;
+    padding: 6px 6px 5px 6px;
+}
+@media (max-width: 768px){
+    #ar{
+        padding-bottom: 3px;
+    }
+}
+h1, h2 {
+    text-align: center;
+}
+
+#contenido {
+    margin-top: 40px;
+}
+.borrar-nota,
+.borrar-nota:hover {
+    float: right;
+    cursor: pointer;
+    color: #cc2b2b;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.error {
+    background-color: #cc2b2b;
+    text-align: center;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    max-width: 400px;
+    margin: 20px auto;
+    color: white;
+    border-radius: 5px;
+}
+
+.borrar-todo-btn{
+    float: right;
+    margin: 20px 0;
+    color: #cc2b2b;
+    border: 2px solid #cc2b2b;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.borrar-todo-btn:hover{
+    background-color: #cc2b2b;
+    color: #fff;
+}

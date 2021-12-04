@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NOTEAR</title>
+    <meta name="description" content="Notear es un sitio web que utiliza local storage de los navegadores para guardar 'notas rápidas' y así poder volver a revisarlas cuando tengas la necesidad de recordar una anotación.">
+    <link rel="shortcut icon" href="img/note-icon.png" type="image/x-icon">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/custom.css">
+
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js" integrity="sha512-Tn2m0TIpgVyTzzvmxLNuqbSJH3JP8jm+Cy3hvHrW7ndTDcJ1w5mBiksqDBb8GpE2ksktFvDB/ykZ0mDpsZj20w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.0/css/font-awesome.min.css" integrity="sha512-FEQLazq9ecqLN5T6wWq26hCZf7kPqUbFC9vsHNbXMJtSZZWAcbJspT+/NEAQkBfFReZ8r9QlA9JHaAuo28MTJA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+</head>
+<body>
+
+    <div id="contenido">
+        <div class="container">
+
+            <h1>Note<span id="ar">ar</span></h1>
+            <div class="row">
+                <div class="six columns">
+                    <label for="nota">Nota:</label>
+                    <form  id="formulario">
+                            <label for="nota"></label>
+                            <textarea id="nota" class="u-full-width"></textarea>
+                            <input type="submit" class="button u-full-width button-primary" value="Agregar nota">
+                    </form>
+                </div>
+                <div class="six columns">
+                    <h2>Mis Notas</h2>
+                    <div id="lista-notas"></div>
+                </div>
+            </div>
+
+        </div>
+    </div> <!--#contenido-->
+
+    <script src="js/app.js"></script>
+    
+</body>
+</html>
